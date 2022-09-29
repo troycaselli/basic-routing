@@ -17,7 +17,6 @@ function App() {
 
   return (
     <div className="App">
-      <p>TEST</p>
       <header className="App-header">
           <Link to='/'>Home</Link>
           <Link to='/about'>About</Link>
