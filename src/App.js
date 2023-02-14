@@ -2,7 +2,7 @@ import React from 'react';
 import {Route, Routes, Link} from 'react-router-dom';
 import './App.css';
 
-function Home(props) {
+function Home() {
   return <h1>Home Component</h1>
 }
 function About(props) {
@@ -22,9 +22,9 @@ function App() {
           <Link to='/about'>About</Link>
           <Link to='/contact'>Contact</Link>
           <Routes>
-            <Route path='./' component={Home} />
-            <Route path='./about' component={About} />
-            <Route path='./contact' component={Contact} />
+            <Route path='/' element={Home()} />
+            <Route path='/about' element={About()} />
+            <Route path='/contact' element={Contact()} />
           </Routes>
       </header>
     </div>
